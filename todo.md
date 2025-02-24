@@ -1,11 +1,31 @@
 ```markdown
 ### Core
-[x] **Initialize Express server with middleware**  
-- Install `express`/`crypto`, configure JSON/URL encoding  
-- *Validation:* `curl -I http://localhost:3000` returns 200  
-- Files: `server.js`, `package.json`
+[x] **Initialize Next.js project with Frame SDK**
+- Install dependencies and configure Frame SDK
+- *Validation:* Project builds successfully
+- Files: `package.json`, `src/components/Frame.tsx`
 
-[ ] **Create order validation regex pattern**  
+[x] **Set up project constants**
+- Define project title, description, and IDs
+- *Validation:* Constants used consistently across app
+- Files: `src/lib/constants.ts`
+
+[x] **Implement OpenGraph image generation**
+- Create dynamic OG images with project branding
+- *Validation:* Images generate correctly with fonts
+- Files: `src/app/opengraph-image.tsx`
+
+[x] **Add Farcaster authentication**
+- Implement sign-in with Farcaster using NextAuth
+- *Validation:* Auth flow works with credentials provider
+- Files: `src/auth.ts`, `src/components/Frame.tsx`
+
+[ ] **Add notification system**
+- Implement Frame notification handling
+- *Validation:* Notifications send/receive correctly
+- Files: `src/components/Frame.tsx`
+
+[ ] **Enhance error handling**
 - Implement `^[🍔🍟🥤🍦]+x\d+$` regex check  
 - *Validation:* Unit tests pass for valid/invalid patterns  
 - Files: `orderLogic.js`

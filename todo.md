@@ -1,6 +1,6 @@
 ```markdown
 ### Core
-[ ] **Initialize Express server with middleware**  
+[x] **Initialize Express server with middleware**  
 - Install `express`/`crypto`, configure JSON/URL encoding  
 - *Validation:* `curl -I http://localhost:3000` returns 200  
 - Files: `server.js`, `package.json`
